@@ -14,9 +14,8 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
-app.get("/", (req, res) => res.send("We are on the Home page"));
-
 app.use(express.static(path.join(__dirname, "client/build")));
+app.get("/", (req, res) => res.send("We are on the Home page"));
 
 app.use("/auth", authRoutes);
 app.use("/weather", weatherRoutes);

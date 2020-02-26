@@ -20,5 +20,5 @@ app.get("/", (req, res) => {
 app.use("/auth", authRoutes);
 app.use("/weather", weatherRoutes);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => log.success(`Server running on port ${PORT}`));

@@ -2,7 +2,7 @@
 
 export const getRootUrl = () =>
   process.env.NODE_ENV === "production"
-    ? process.env.PRODUCTION_URL
+    ? "https://reactnode-weather-app.herokuapp.com/"
     : process.env.REACT_APP_DEV_API_URL;
 
 export const ROOT_POINT = getRootUrl();

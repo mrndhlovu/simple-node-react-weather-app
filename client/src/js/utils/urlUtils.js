@@ -6,10 +6,3 @@ export const getRootUrl = () =>
     : process.env.REACT_APP_DEV_API_URL;
 
 export const ROOT_POINT = getRootUrl();
-
-export const authQueryParams = {
-  headers: {
-    Authorization: ``,
-    "Content-Type": "application/json"
-  }
-};

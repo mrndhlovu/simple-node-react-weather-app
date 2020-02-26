@@ -31,6 +31,7 @@ const HomePage = () => {
   const handleClearSearch = () => {
     document.getElementById("myForm").reset();
     setData(null);
+    setAddress(null);
   };
 
   useEffect(() => {

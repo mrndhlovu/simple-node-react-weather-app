@@ -1,0 +1,50 @@
+.ui,
+.card,
+.header,
+body {
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.app-container {
+  height: 86vh;
+  position: relative;
+}
+
+.footer {
+  min-height: 50px;
+  background-color: #eee;
+  display: grid;
+  justify-content: end;
+  align-items: center;
+  padding-right: 50px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+}
+
+.footer-text {
+  font-size: 15px;
+}
+
+.forecast-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: auto;
+}
+
+.left {
+  padding: 0 30px;
+
+  align-self: center;
+}
+
+.right {
+  justify-self: center;
+  align-self: center;
+  padding: 50px 0;
+}

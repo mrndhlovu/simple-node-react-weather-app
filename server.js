@@ -14,9 +14,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("We are on the Home page");
-});
+app.get("/", (req, res) => res.send("We are on the Home page"));
 
 app.use(express.static(path.join(__dirname, "client/build")));
 

@@ -23,12 +23,12 @@ const getGeoLocation = (location, callback) => {
     if (error)
       return callback({
         error:
-          "Unable to connect to weather service! Check you internet connection."
+          "Unable to connect to weather service! Check you internet connection.",
       });
     else if (response.body.message) return callback(response.body.message);
     else if (response.body.features.length === 0)
       return callback({
-        error: `Search term '${location}' not found, search again!`
+        error: `Search term '${location}' not found, search again!`,
       });
     else callback(response.body);
   });

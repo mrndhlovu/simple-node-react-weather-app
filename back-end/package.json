@@ -19,7 +19,7 @@
     "client-install": "cd ../front-end && yarn install",
     "client": "cd ../front-end && yarn dev",
     "dev": "concurrently --kill-others-on-fail \"yarn run start:server\"  \"yarn run client\" ",
-    "heroku-postbuild": "cd front-end && yarn && yarn run build"
+    "heroku-postbuild": "cd ../front-end && yarn && yarn run build"
   },
   "author": "Mduduzi Ndhlovu",
   "license": "MIT",

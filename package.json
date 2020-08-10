@@ -12,7 +12,8 @@
     "express": "^4.17.1",
     "mongoose": "^5.8.9",
     "nodemon": "^2.0.2",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "serve": "^11.3.2"
   },
   "scripts": {
     "client-install": "cd client && yarn install",
